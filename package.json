@@ -1,7 +1,6 @@
 {
   "name": "react-material-spa",
   "version": "0.1.0",
-  "type": "module",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.13.0",
@@ -19,7 +18,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "node api/sendEmail.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test"
   },
