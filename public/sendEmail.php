@@ -1,4 +1,8 @@
 <?php
+header("Access-Control-Allow-Origin: *"); // Adjust this for security in production
+header("Access-Control-Allow-Methods: POST");
+header("Access-Control-Allow-Headers: Content-Type");
+
 // Check if POST request
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Retrieve JSON data from request body

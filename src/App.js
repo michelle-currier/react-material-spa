@@ -90,7 +90,7 @@ const theme = createTheme({
             },
           },
           "& .MuiFilledInput-input": {
-            color: "#000000", // Text color inside the input
+            color: "#fff", // Text color inside the input
           },
         },
       },
