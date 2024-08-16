@@ -17,7 +17,7 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("https://react-spa-ashy.vercel.app/sendEmail.php", formData, {
+      .post("http://localhost/emailBackend/sendEmail.php", formData, {
         headers: {
           "Content-Type": "application/json", // Ensure the content type is JSON
         },
