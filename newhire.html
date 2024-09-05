@@ -1,0 +1,45 @@
+<div class="container">
+    <label>Full name [text* name-new-hire autocomplete:name] </label>
+
+    <label>Address/Location [text* address] </label>
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+<label> Email [email* email-1 autocomplete:email] </label>
+        </div>
+        <div class="col-md-6 col-sm-12">
+<label> Phone [tel* tel-1]</label>
+        </div>    
+    </div>        
+</div>
+
+
+
+
+
+
+
+<label> Do you have Signal app?[radio radio-signal use_label_element default:1 "yes" "no"]</label>
+
+<div> Are you available to mobilize within 72 hours?[radio radio-72 use_label_element "yes" "no"]</div>
+
+<label>What is your vehicle type[select vehicle "250" "350" "truck" "SUV" "other"] </label>
+
+<label> Are you bilingual? [radio radio-lang use_label_element default:2 "yes" "no"] </label>
+
+<label> Prior service experience [select service "Navy" "Army" "Airforce" "Coast Guard" "Police" "Fire/Rescue" "EMS" "other" "none"] </label>
+
+[conditional conditional-881]<label>if other [text service-other]</label>[/conditional]
+
+<label>Years of service [text service-years]</label>
+
+<label> Did someone or another website refer you here? [text* text-referral] </label>
+
+<label> Are you for lift certified? [radio radio-forklift use_label_element default:2 "yes" "no"]</label> 
+
+[conditional conditional-307]<label>input your certification number [text forklift-cert] </label>[/conditional]
+
+<label> What is your shirt size? [select* shirt "small" "medium" "large" "x large" "xx large"]</label>
+
+<label> Upload your resume [file file-resume]</label>
+
+[submit "Submit"]
